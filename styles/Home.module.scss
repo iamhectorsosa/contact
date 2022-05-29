@@ -1,41 +1,42 @@
 @use "../styles/generals.scss";
 
 .form {
-	display: grid;
-	gap: 0.5rem;
-	font-weight: 300;
+    display: grid;
+    gap: 0.5rem;
+    font-weight: 300;
 }
 
-.textinput-root, .textarea-root {
-  & label {
-    font-weight: 400;
-  }
+.textinput-root,
+.textarea-root {
+    & label {
+        font-weight: 400;
+    }
 }
 
 .textinput-wrapper {
-  & input {
-    font-weight: 300;
-		margin-block-end: 0.5rem;
-  }
+    & input {
+        font-weight: 300;
+        margin-block-end: 0.5rem;
+    }
 }
 
 .textarea-message {
-	& div {
-		align-items: flex-start;
-		margin-block: 15px;
-	}
-	& textarea {
-		font-weight: 300;
-		margin-block-end: 1rem;
-	}
+    & div {
+        align-items: flex-start;
+        margin-block: 15px;
+    }
+    & textarea {
+        font-weight: 300;
+        margin-block-end: 1rem;
+    }
 }
 
 .button {
-	width: fit-content;
-	font-weight: 400;
-	margin-block: 0 1rem;
-	margin-inline-end: 0.5rem;
-	&[disabled] {
-		background-image: none;
-	}
+    width: fit-content;
+    font-weight: 400;
+    margin-block: 0 1rem;
+    margin-inline-end: 0.5rem;
+    &[disabled] {
+        background-image: none;
+    }
 }

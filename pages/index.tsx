@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
+import GitHubCorner from "../components/GitHubCorner";
 
 import { TextInput, Textarea, Button, LoadingOverlay } from "@mantine/core";
 
@@ -11,7 +12,7 @@ import {
     AiOutlineMail,
     AiOutlineSend,
     AiOutlineCheck,
-    AiOutlineClose
+    AiOutlineClose,
 } from "react-icons/ai";
 import { BiMessageSquare } from "react-icons/bi";
 
@@ -57,7 +58,6 @@ const Home: NextPage = () => {
 
         if (validation) {
             try {
-                console.log(entry);
                 setLoader(true);
                 await fetcher("/api/contact", {
                     method: "POST",
@@ -81,8 +81,6 @@ const Home: NextPage = () => {
                 });
                 console.log(error);
             }
-        } else {
-            console.log(validation);
         }
     };
 
@@ -173,6 +171,7 @@ const Home: NextPage = () => {
                     </form>
                 </section>
             </main>
+            <GitHubCorner href={"https://github.com/ekqt/contact"} />
         </div>
     );
 };

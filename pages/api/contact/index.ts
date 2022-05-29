@@ -1,6 +1,7 @@
+import type { NextApiRequest, NextApiResponse } from 'next'
 import { Client } from "@notionhq/client";
 
-export default async function handler(req: any, res: any) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === "POST") {
         const data = JSON.parse(req.body);
         const entry: any = {
