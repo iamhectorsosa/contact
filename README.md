@@ -8,7 +8,7 @@ As of March this year, the [Notion API](https://developers.notion.com/) is offic
 
 We'll be using [React](https://reactjs.org/), [Next.js](https://nextjs.org/), [Mantine](https://mantine.dev/) and [Notion](https://developers.notion.com/) (as our database). We will not be integrating authentication for this project, purposefully so to remove any friction and to allow anyone to send a 'Contact Us' message.
 
-Here's how to get our project started:
+This is the live [demo](https://contact-ekqt.vercel.app/) (so feel free to leave me a comment and try it out) and here's how to get our project started:
 
 ```bash
 # React Typescript Next.js
