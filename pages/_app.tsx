@@ -1,8 +1,25 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.scss";
+import { AppProps } from "next/app";
+import { MantineProvider } from "@mantine/core";
+import { NotificationsProvider } from "@mantine/notifications";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+export default function App(props: AppProps) {
+    const { Component, pageProps } = props;
+
+    return (
+        <>
+            <MantineProvider
+                withGlobalStyles
+                withNormalizeCSS
+                theme={{
+                    /** Put your mantine theme override here */
+                    colorScheme: "light",
+                }}
+            >
+                <NotificationsProvider>
+                    <Component {...pageProps} />
+                </NotificationsProvider>
+            </MantineProvider>
+        </>
+    );
 }
-
-export default MyApp

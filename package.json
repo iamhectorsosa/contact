@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^4.2.6",
+    "@mantine/hooks": "^4.2.6",
+    "@mantine/next": "^4.2.6",
+    "@mantine/notifications": "^4.2.7",
+    "@notionhq/client": "^1.0.4",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "17.0.36",
@@ -19,6 +25,7 @@
     "@types/react-dom": "18.0.5",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "sass": "^1.52.1",
     "typescript": "4.7.2"
   }
 }
