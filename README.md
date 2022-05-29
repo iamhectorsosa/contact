@@ -4,7 +4,7 @@
 
 As of March this year, the [Notion API](https://developers.notion.com/) is official out of beta, so let's go ahead and try it out by creating 'Contact Us' page.
 
-!['Contact Us page'](https://res.cloudinary.com/dmca9ldbv/image/upload/v1653843145/blog/contact-scope_iwe1zi.png)
+!['Contact Us page'](https://res.cloudinary.com/dmca9ldbv/image/upload/v1653843145/blog/contact/contact-scope_iwe1zi.png)
 
 We'll be using [React](https://reactjs.org/), [Next.js](https://nextjs.org/), [Mantine](https://mantine.dev/) and [Notion](https://developers.notion.com/) (as our database). We will not be integrating authentication for this project, purposefully so to remove any friction and to allow anyone to send a 'Contact Us' message.
 
